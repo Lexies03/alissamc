@@ -8,83 +8,79 @@
     <title>Alissa Mae Portfolio</title>
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="p1-web-dev-portfolio.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/about.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/skills.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/projects.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/contact.css" />
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ff71d81ed7.js" crossorigin="anonymous"></script>
+    <!-- FUNCTIONALITY -->
+    <script src="p1-web-dev-portfolio.js" defer></script>
 </head>
 
 <body>
     <header class="nav-container" id="nav-container">
-        <div class="container">
-            <nav id="nav">
+        <!-- NAVIGATION MENU -->
+        <div class="container" id="container">
+            <nav id="nav" class="nav">
                 <div class="logo-container">
                     <img src="portfolio-icons/Logo-black.png" alt="Logo black" class="logo_img" />
                     <label class="logo-name">Lissa</label>
                 </div>
-
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="link">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="link">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="link">
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li class="link">
-                        <a href="#project" class="nav-link">Projects</a>
-                    </li>
-                    <li class="link">
-                        <a href="#contact" class="nav-link">Contacts</a>
-                    </li>
-                </ul>
-
                 <div class="dl-cv">
                     <a href="https://drive.google.com/file/d/1_AOQQZOLkKgvxscL2-cbOTMxHt71QCkW/view?usp=sharing"
-                        class="btn-cv" target="_blank">
+                        class="link-cv" target="_blank">
                         Download CV
                     </a>
                 </div>
+
+                <input type="checkbox" class="side-menu" id="side-menu" />
+                <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+                <nav class="nav-menu-container">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li class="link">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="link">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="link">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="link">
+                            <a href="#project" class="nav-link">Projects</a>
+                        </li>
+                        <li class="link">
+                            <a href="#contact" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
             </nav>
+
+
         </div>
-        <input type="checkbox" class="side-menu" id="side-menu" />
-        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+
     </header>
 
-
-    <nav class="side-bar" id="side-bar">
-        <a href="#home" class="side-link"><span class="material-icons">home</span></a>
-        <a href="#about" class="side-link"><span class="material-icons">
-                person
-            </span> </a>
-        <a href="#skills" class="side-link"><span class="material-icons">
-                settings_suggest
-            </span>
-            <a href="#project" class="side-link"><span class="material-icons">
-                    list_alt
-                </span></a>
-            <a href="#contact" class="side-link"><span class="material-icons">
-                    email
-                </span></a>
-
-            <input type="checkbox" class="side-menu" id="side-menu" />
-            <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
-    </nav>
-
     <section class="section-container">
+        <!-- HOME -->
         <section class="home" id="home">
             <article class="home-text">
-                <div>
+                <div class="text-container">
                     <h3 class="text_h3">Hi, I am</h3>
                     <h2 class="text_h2">Alissa Mae Celeste</h2>
                     <p class="text_p">A FullStack Web Developer</p>
                 </div>
-
+                <div class="social-media">
+                    <p class="social-text">Follow me here:</p>
+                    <div class="social-links">
+                        <a href="https://gitlab.com/Lexies03" target="_blank"><i
+                                class="fa-brands fa-gitlab social-media-icons"></i></a>
+                        <a href="https://github.com/Lexies03" target="_blank"><i
+                                class="fa-brands fa-github social-media-icons"></i></a>
+                        <a href="https://www.linkedin.com/in/alissamaeceleste" target="_blank"><i
+                                class="fa-brands fa-linkedin social-media-icons"></i></a>
+                    </div>
+                </div>
             </article>
             <div class="home-profile">
                 <img src="portfolio-icons/alissa-picture3.png" alt="profile" class="profile_img" />
@@ -92,6 +88,7 @@
             </div>
         </section>
 
+        <!-- ABOUT -->
         <section class="about" id="about">
             <div>
                 <header class="header-container">
@@ -100,15 +97,6 @@
                 </header>
                 <article class="about-content">
                     <div class="about-col-1">
-                        <!-- <img src="portfolio-icons/alissa-picture1.png" alt="Profile" class="about_profile_img" /> -->
-                        <!-- <div class="tabs-container">
-                        <div class="about-tabs">
-                            <p class="tab-link">Info</p>
-                            <p class="tab-link">Education</p>
-                            <p class="tab-link">Trainings</p>
-                            <p class="tab-link">Experience</p>
-                        </div>
-                    </div> -->
                         <div class="about-content-area2">
                             <div class="about-content-area2-container1 box">
                                 <div class="box-header-container">
@@ -155,20 +143,27 @@
 
                     <div class="about-col-2">
                         <p class="name">ALISSA MAE CELESTE</p>
-                        <p class="article">
-                            I am a FullStack Web Developer specializing in MERN Stack Development. I am passionate about
-                            building interactive and user-friendly
-                            web applications. While starting programming, I find myself enjoying it, and I felt
-                            fulfilled whenever I finished a project. It
-                            feels like magic to me. I recently completed an intensive training/bootcamp in FullStack Web
-                            Development at Uplift Code Camp training
-                            school based in Quezon City, Philippines.
-                        </p>
+                        <div class="about-article-container">
+                            <img src="portfolio-icons/alissa-picture1.png" alt="profile" class="profile_about" />
+                            <p class="article">
+                                I am a FullStack Web Developer specializing in MERN Stack Development. I am passionate
+                                about building interactive
+                                and user-friendly
+                                web applications. While starting programming, I find myself enjoying it, and I felt
+                                fulfilled whenever I finished a
+                                project. It
+                                feels like magic to me. I recently completed an intensive training/bootcamp in FullStack
+                                Web Development at Uplift
+                                Code Camp training
+                                school based in Quezon City, Philippines.
+                            </p>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- SKILLS -->
         <section class="skills" id="skills">
             <div>
                 <header class="header-container">
@@ -194,11 +189,11 @@
 
                     <div class="skills-grid-header skills-content-grid-col2-header">SPECIALIZATION</div>
                     <div class="skills-icons skills-icons-mongodb">
-                        <img src="portfolio-icons/skills-icons/html5.svg" alt="MongoDB Icon" />
+                        <img src="portfolio-icons/mongodb.png" alt="MongoDB Icon" />
                         <p class="skills-labels">MongoDB</p>
                     </div>
                     <div class="skills-icons skills-icons-express">
-                        <img src="portfolio-icons/skills-icons/html5.svg" alt="Express Icon" />
+                        <i class="fa-brands fa-square-js icons"></i>
                         <p class="skills-labels">Express</p>
                     </div>
                     <div class="skills-icons skills-icons-react">
@@ -244,20 +239,18 @@
                         <img src="portfolio-icons/tailwind.png" alt="Tailwind" />
                         <p class="skills-labels">Tailwind Css</p>
                     </div>
+                    <div class="skills-icons-subheader-other">
+                        <p class="skills-grid-header">OTHERS</p>
+                    </div>
                     <div class="skills-icons skills-icons-react-native">
                         <img src="portfolio-icons/skills-icons/react.svg" alt="React Native" />
                         <p class="skills-labels">React Native</p>
                     </div>
-
-                    <div class="skills-icons-subheader-other">
-
-                        <p class="skills-grid-header">OTHERS</p>
-                    </div>
-
                 </div>
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section class="project" id="project">
             <div>
                 <header class="header-container">
@@ -269,25 +262,21 @@
                 <div class="project-box">
                     <img src="portfolio-icons/project-portfolio.png" alt="project" />
                     <div class="layer">
-                        <h3>Porfolio Website</h3>
-                        <p>HTML, CSS, JavaScript</p>
+                        <h3>Portfolio</h3>
+                        <p>I used vanilla html, css, and javascript in building my portfolio.</p>
                         <div class="project-link-container">
                             <div class="project-link">
-                                <span class="material-icons">
-                                    code
-                                </span>
-                                <a href="https://github.com/Lexies03/alissamc">Get Code</a>
+                                <a href="https://github.com/Lexies03/MyProjects"> <i
+                                        class="fa-solid fa-code code-link"></i>Get Code</a>
                             </div>
                             <div class="project-link">
-                                <span class="material-icons">
-                                    link
-                                </span>
-                                <a href="https://alissawebdev.netlify.app" target="_blank">Link</a>
+                                <a href="https://alissawebdev.netlify.app" target="_blank"><i
+                                        class="fa-solid fa-link code-link"></i>Link</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
+
                 <div class="project-box">
                     <img src="portfolio-icons/project-kapares.png" alt="project" />
                     <div class="layer">
@@ -298,68 +287,49 @@
                             about the antonyms or pair of a particular thing or object.</p>
                         <div class="project-link-container">
                             <div class="project-link">
-                                <span class="material-icons">
-                                    code
-                                </span>
-                                <a href="">Get Code</a>
+                                <a href="https://github.com/Lexies03/MyProjects"> <i
+                                        class="fa-solid fa-code code-link"></i>Get Code</a>
                             </div>
                             <div class="project-link">
-                                <span class="material-icons">
-                                    link
-                                </span>
-                                <a href="https://kapares-js-game.netlify.app" target="_blank">Link</a>
+                                <a href="https://kapares-js-game.netlify.app/" target="_blank"><i
+                                        class="fa-solid fa-link code-link"></i>Link</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="project-box">
                     <img src="portfolio-icons/project-budget.png" alt="project" />
                     <div class="layer">
-                        <h3>Budget Grocery App Frontend</h3>
-                        <p>The name 'KAPARES' is a bisaya word which means pair in english. The purpose of the game is
-                            to expand your
-                            knowledge
-                            about the antonyms or pair of a particular thing or object.</p>
+                        <h3>Budget Grocery App (React)</h3>
+                        <p>This app calculates and budget the user's groceries. I used react js to build this great app.
+                        </p>
                         <div class="project-link-container">
                             <div class="project-link">
-                                <span class="material-icons">
-                                    code
-                                </span>
-                                <a href="">Get Code</a>
+                                <a href="https://github.com/Lexies03/MyProjects"> <i
+                                        class="fa-solid fa-code code-link"></i>Get Code</a>
                             </div>
                             <div class="project-link">
-                                <span class="material-icons">
-                                    link
-                                </span>
-                                <a href="https://budgetgrocery.netlify.app" target="_blank">Link</a>
+                                <a href="https://budgetgrocery.netlify.app" target="_blank"><i
+                                        class="fa-solid fa-link code-link"></i>Link</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="project-box">
                     <img src="portfolio-icons/project-budget.png" alt="project" />
                     <div class="layer">
-                        <h3>JavaScript Kapares Game</h3>
-                        <p>The name 'KAPARES' is a bisaya word which means pair in english. The purpose of the game is
-                            to expand your
-                            knowledge
-                            about the antonyms or pair of a particular thing or object.</p>
+                        <h3>Budget Grocery (FullStack)</h3>
+                        <p>This app calculates and budget the user's groceries. It has a mongodb database so the app is
+                            interactive.</p>
                         <div class="project-link-container">
                             <div class="project-link">
-                                <span class="material-icons">
-                                    code
-                                </span>
-                                <a href="">Get Code</a>
+                                <a href="https://github.com/Lexies03/MyProjects"> <i
+                                        class="fa-solid fa-code code-link"></i>Get Code</a>
                             </div>
                             <div class="project-link">
-                                <span class="material-icons">
-                                    link
-                                </span>
-                                <a href="#">Link</a>
+                                <a href="https://budgetgrocery.netlify.app" target="_blank"><i
+                                        class="fa-solid fa-link code-link"></i>Link</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -367,29 +337,25 @@
                     <img src="portfolio-icons/project-ramble.png" alt="project" />
                     <div class="layer">
                         <h3>Ramble Chat App</h3>
-                        <p>The name 'KAPARES' is a bisaya word which means pair in english. The purpose of the game is
-                            to expand your
-                            knowledge
-                            about the antonyms or pair of a particular thing or object.</p>
+                        <p>Ramble Chat is a chat messaging app that allow users to connect with each other. It can
+                            create rooms, both public and private. It is used for group discussions and communication.
+                        </p>
                         <div class="project-link-container">
                             <div class="project-link">
-                                <span class="material-icons">
-                                    code
-                                </span>
-                                <a href="">Get Code</a>
+                                <a href="https://github.com/Lexies03/MyProjects"> <i
+                                        class="fa-solid fa-code code-link"></i>Get Code</a>
                             </div>
                             <div class="project-link">
-                                <span class="material-icons">
-                                    link
-                                </span>
-                                <a href="https://ramble-murex.vercel.app" target="_blank">Link</a>
+                                <a href="https://ramble-murex.vercel.app" target="_blank"><i
+                                        class="fa-solid fa-link code-link"></i>Link</a>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- CONTACT -->
         <section class="contact" id="contact">
             <div>
                 <header class="header-container">
@@ -435,27 +401,19 @@
                 </div>
             </div>
         </section>
+
+        <!-- FOOTER -->
         <footer>
             <div class="footer-content">
                 <p>&#169; 2023 Alissa Mae Celeste Portfolio</p>
-                <p>Freepik.com, Fontawesome.com fonts.google.com</p>
+                <div>
+                    <a href="https://fontawesome.com/" class="footer-link">Fontawesome Icons,</a>
+                    <a href="https://fonts.google.com/" class="footer-link">Google Fonts</a>
+                </div>
             </div>
         </footer>
-        <script>
-            const navbar = document.getElementById("nav");
-            const sidebar = document.getElementById("side-bar");
-            const content = document.querySelector(".section-container");
 
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 20) {
-                    navbar.style.display = "none";
-                    sidebar.style.display = "flex";
-                } else {
-                    navbar.style.display = "flex";
-                    sidebar.style.display = "none";
-                }
-            });
-        </script>
+
 </body>
 
 </html>
